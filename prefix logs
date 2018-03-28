@@ -1,0 +1,6 @@
+SYSTEM
+[SYSTEM-INFO]                informacja systemowe, logi systemu
+[SYSTEM-ERROR(#_kod_))]      kod systemowy o treści kodu
+
+GAME
+[GAME-INFO]                  informacja z gry, logi z gry
