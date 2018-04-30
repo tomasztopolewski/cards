@@ -1,0 +1,20 @@
+OBECNY:
+  format: xxxxxx (np. 999, 10101, 20101, 100013, 200013)
+          x - cyfra; występują polecenie od 1 do 99999
+
+
+
+
+
+NOWY:
+  format: XX-xxxxx
+          (np. AC-101, AA-10101, AB-20101)
+          X - litera alafebu, x - cyfra
+
+
+
+
+
+
+
+

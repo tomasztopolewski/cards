@@ -1,11 +1,9 @@
-package pl.tomasztopolewski.cards.communication;
+package pl.tomasztopolewski.cards.communication.console;
 
 import pl.tomasztopolewski.cards.communication.Communique;
 
 public class Console {
     private Order order;
-
-
 
     /*private ManagerObjects managerObjects;*/
 

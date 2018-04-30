@@ -1,4 +1,4 @@
-package pl.tomasztopolewski.cards.communication;
+package pl.tomasztopolewski.cards.communication.console;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -96,7 +96,7 @@ public class Order {
         if (order.startsWith("/")) {
             //System.out.print("  SYSTEM_INFO: Ustawianie 'numberSwitch' przez 'Order' w warunku komendy.\n");
             createNumberForCommand();
-        } else if (order.startsWith("@/")) {
+        } else if (order.startsWith("$/")) {
             //System.out.print("  SYSTEM_INFO: Ustawianie 'numberSwitch' przez 'Order' w warunku super komendy.\n");
             createNumberForSuperCommand();
         } else {
@@ -132,17 +132,17 @@ public class Order {
                     else setNumberSwitch(0);
                 } else setNumberSwitch(0);
 
-                //ustawiam numberSwitch dla numberSwitch poleceń 'view'
-            } else if (order.startsWith("view")) {
+                //ustawiam numberSwitch dla numberSwitch poleceń 'window'
+            } else if (order.startsWith("window")) {
                 addNumberSwitch(3);
-                if (order.startsWith("view parameter")) {
+                if (order.startsWith("window parameter")) {
                     addNumberSwitch(10);
-                    if (order.startsWith("view parameter building level architect")) addNumberSwitch(100000);
-                    else if (order.startsWith("view parameter building level warehouse")) addNumberSwitch(200000);
-                    else if (order.startsWith("view parameter building level quarry")) addNumberSwitch(300000);
-                    else if (order.startsWith("view parameter building level lumberjack")) addNumberSwitch(400000);
-                    else if (order.startsWith("view parameter building level flowerbed")) addNumberSwitch(500000);
-                    else if (order.startsWith("view parameter building level house")) addNumberSwitch(600000);
+                    if (order.startsWith("window parameter building level architect")) addNumberSwitch(100000);
+                    else if (order.startsWith("window parameter building level warehouse")) addNumberSwitch(200000);
+                    else if (order.startsWith("window parameter building level quarry")) addNumberSwitch(300000);
+                    else if (order.startsWith("window parameter building level lumberjack")) addNumberSwitch(400000);
+                    else if (order.startsWith("window parameter building level flowerbed")) addNumberSwitch(500000);
+                    else if (order.startsWith("window parameter building level house")) addNumberSwitch(600000);
                     else setNumberSwitch(0);
                 }
             } else setNumberSwitch(0);
@@ -150,9 +150,9 @@ public class Order {
         }
 
         /*
-        //ustawiam liczbe dla polecen 'view'
-        if (order.startsWith("view")) {
-            //if (order.startsWith("view "))
+        //ustawiam liczbe dla polecen 'window'
+        if (order.startsWith("window")) {
+            //if (order.startsWith("window "))
         } else setNumberSwitch(-1);
         */
     }
@@ -176,7 +176,7 @@ public class Order {
         if (order.startsWith("/50102") && order.length() == 6) setNumberSwitch(50102);
         if (order.startsWith("/60102") && order.length() == 6) setNumberSwitch(60102);
 
-        //ustawiam numberSwitch dla numberSwitch poleceń 'view'
+        //ustawiam numberSwitch dla numberSwitch poleceń 'window'
 
 
     }

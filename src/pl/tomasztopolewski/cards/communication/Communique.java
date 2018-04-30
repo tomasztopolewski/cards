@@ -3,7 +3,7 @@ package pl.tomasztopolewski.cards.communication;
 public abstract class Communique {
     public static String nameGame = "Cards";
     public static String author = "Tomasz Topolewski";
-    public static String version = "v1.00.00";
+    public static String version = "v1.01.15";
     public static String typeOfVersion = "preDEV";
     public static String longStartDateWork = "23rd Feburary 2018";
     public static String medianStartDateWork = "Feburary 2018";
